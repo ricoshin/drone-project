@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+# 프로젝트 기술문서
 
-You can use the [editor on GitHub](https://github.com/ricoshin/drone-project/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+## 프로젝트명
+주변 환경 인식 및 자율비행 드론 시스템 구축
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## 개발환경
+- FCU와 companion computer를 통합한 Linux-based MAV 기반(Erle-brain2) 
+- Debian / C++ / ROS (Robot Operating System)
+- mavros 패키지를 매개로 Autopilot(APM/PX4) 원격제어
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ricoshin/drone-project/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## 프로젝트 목표
+-  Wi-Fi 로 실시간 영상 전송 / 원격 머신에서 고비용 연산처리 / 제어신호 리턴 
+-  Gazebo를 이용한 시뮬레이션 (자율비행 알고리즘 테스트) 
+-  Caffe를 ROS package로 wrap하여 원격지에서 실시간 object detection 
+-  Kalman filter를 통한 state estimation
+-  PTAM을 이용한 드론 pose예측 및 호버링 유지
+-  LSD-SLAM을 이용한 주변 환경 매핑
